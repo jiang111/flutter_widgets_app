@@ -12,7 +12,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _id = 1;
-  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   String title = "flutter widgets";
 
   @override
@@ -24,7 +23,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: color_edf0f4,
-      key: scaffoldKey,
       appBar: AppBar(
         centerTitle: true,
         title: Text(title),
@@ -45,6 +43,7 @@ class _HomePageState extends State<HomePage> {
                 overScroll.disallowGlow();
               },
               child: ListView.builder(
+                  physics: const AlwaysScrollableScrollPhysics(),
                   key: new PageStorageKey('feed'),
                   shrinkWrap: true,
                   itemCount: ParentList.buildParentList().length,
