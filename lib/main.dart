@@ -13,7 +13,6 @@ void main() {
   }
 }
 
-
 var theme = ThemeData(
     primaryColor: blue,
     accentColor: Colors.red,
@@ -30,6 +29,7 @@ class FlutterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
+//      showPerformanceOverlay: true,
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
