@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets_app/PhotoViewPage.dart';
+import 'package:flutter_widgets_app/photoview_page.dart';
 import 'utils/fcolors.dart';
 import 'data/parent_list_data.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'webview.dart';
-
 
 class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
