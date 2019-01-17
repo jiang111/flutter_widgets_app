@@ -11,6 +11,15 @@ void main() {
         SystemUiOverlayStyle(statusBarColor: Colors.transparent);
     SystemChrome.setSystemUIOverlayStyle(style);
   }
+   ErrorWidget.builder = (FlutterErrorDetails flutterErrorDetail) {
+    print(flutterErrorDetail.toString());
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Text("报错了"),
+      ),
+    );
+  };
 }
 
 var theme = ThemeData(
