@@ -77,7 +77,7 @@ class GenerateUtils {
   }
 
   static String mdHost =
-      "https://github.com/jiang111/flutter_widgets_doc/raw/master/";
+      "https://github.com/jiang111/flutter_widgets_doc/blob/master/";
   static String imgHost =
       "https://github.com/jiang111/flutter_widgets_doc/raw/master/image/";
 
